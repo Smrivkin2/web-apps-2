@@ -3,7 +3,11 @@
  <ul>
    <% for company in @companies %>
     <li>
+      <a href="/companies/1><%= company.id %>">
       <%= company.name %>
+      </a>
     </li>
    <% end %>
 </ul>
+
+<a href="/companies/new"Add a company </a>
